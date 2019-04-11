@@ -5,6 +5,6 @@ RUN apk --update add --no-cache zip \
   bash \
   && rm -rf /var/cache/apk/*
 
-RUN apk add --update  --no-cache nodejs nodejs-npm
+RUN apk add --update --no-cache nodejs nodejs-npm
 
-RUN npm i -g @adonisjs/cli pm2 gulp yarn
+RUN npm i -g -s -f @adonisjs/cli pm2 gulp yarn
