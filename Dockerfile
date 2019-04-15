@@ -1,8 +1,6 @@
 FROM alpine:latest
 
-RUN apk --update add --no-cache zip \
-  unzip \
-  bash \
+RUN apk --update add --no-cache bash \
   && rm -rf /var/cache/apk/*
 
 RUN apk add --update --no-cache nodejs nodejs-npm
